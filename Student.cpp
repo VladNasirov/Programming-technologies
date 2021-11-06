@@ -3,15 +3,15 @@
 void Student::set_group_name()
 {
 	cout << "¬ведите є группы студента:\n";
-	cin.ignore(32767, '\n');
-	cin >> group_name;
+	cin.ignore();
+	getline(cin, group_name);
 }
 
 void Student::set_speciality()
 {
 	cout << "¬ведите абревиатуру специальности студента:\n";
-	cin.ignore(32767, '\n');
-	cin >> speciality;
+	cin.ignore();
+	getline(cin, speciality);
 }
 
 void Student::set_course()

@@ -36,7 +36,8 @@ adm::adm(int a) : Base(1)
 void adm::set_position()
 {
 	cout << "¬ведите должность:\n";
-	cin >> position;
+	cin.ignore();
+	getline(cin, position);
 }
 void adm::set_position(char* mas)
 {
